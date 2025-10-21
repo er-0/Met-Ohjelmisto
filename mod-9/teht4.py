@@ -19,8 +19,9 @@ def race_hour(cars):
         speed_change = random.randint(-10, 15)
         car.accelerate(speed_change)
         car.drive(1)
+    for car in cars:
         if car.distance_traveled >= 10000:
-            return True #car won the race
+            return True #a car (or multiple) has won the race
     return False
 
 
