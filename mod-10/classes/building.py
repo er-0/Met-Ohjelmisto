@@ -14,9 +14,9 @@ class Building:
         return elev_list
 
     def run_elevator(self, elevator_id, destination_floor):
+        print(f"Ajat hissillä {elevator_id}.")
         dest = self.elevators[elevator_id]
         dest.go_to_floor(destination_floor)
-        print(vars(dest))
 
     def fire_alarm(self):
         for elev in range(self.number_of_elevators):
